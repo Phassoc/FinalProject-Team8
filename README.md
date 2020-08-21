@@ -21,11 +21,10 @@ After assembling the dataset, we used Python Pandas and Matplotlib to examine ex
  
 #
 ## Analysis
-Our team prepared a 15-minute data walktrough of how Machine Learning can describe how three different ingrediants affect the quality of red wine. The three physicochemical factors used in the analysis are volatile acidity, pH, and alcohol.
+Our team prepared a 15-minute data walktrough of how Machine Learning can describe three different physicochemical factors that affect the quality of red wine. The three physicochemical factors used in the analysis are volatile acidity, pH, and alcohol.
 
-The following Machine Learning methods were used to predict and classify how the different types of physicochemical factors affect overall red wine quality.
+The following Machine Learning methods were used to predict and classify the physicochemical factors:
    
-   Machine Learning components:
    * Multiple Linear Regression.
       * Simply means that you have more than one feature (independant) variable.
         * The definition of Linear Regression:  A regression line is simply calculating a line that best fits the data. This is typically done through the least squares method where the line is chosen to have the smallest overall distance to the points. (y=mx+b)
