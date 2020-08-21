@@ -11,10 +11,19 @@ Project Team 8:
 ## Objective - Create an analysis of existing data to make a prediction, classification, or regression.
 #
 ## Story - How do the physicochemical factors affect Red Wine quality?
-  Our team prepared a 15-minute data walktrough of how Machine Learning can describe how three different ingrediants affect the quality of red wine. The three physicochemical factors used in the analysis are volatile acidity, pH, and alcohol.
+Wine is a (delicious) alcoholic drink that dates back to 5000 BC.
+
+The red-wine production process involves the extraction of color and flavor components from the grape skin. Red wine is made from dark-colored grape varieties.
+
+Winemakers are investing in new technologies to improve the quality of wines. By assessing the most influential factors through physicochemical tests, we can use the outcomes to determine the relationship of the factors to the quality rating of the final wine produced.
+
+After assembling the dataset, we used Python Pandas and Matplotlib to examine existing data on wine quality and then employed machine learning for regressions and predictions. Additionally, we include Tableau vizualizations based on the existing data to show the factors our machine learning models were based on.
+ 
 #
-## Comparitive Analysis
-Our team used the following components of Machine Learning to predict and classify how the different types of ingrediants impact overall red wine quality.
+## Analysis
+Our team prepared a 15-minute data walktrough of how Machine Learning can describe how three different ingrediants affect the quality of red wine. The three physicochemical factors used in the analysis are volatile acidity, pH, and alcohol.
+
+The following Machine Learning methods were used to predict and classify how the different types of physicochemical factors affect overall red wine quality.
    
    Machine Learning components:
    * Multiple Linear Regression.
