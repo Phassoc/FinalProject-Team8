@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Welcome to my bootstrap website. Enjoy!" />
+        <meta name="description" content="Machine Learning and Red Wine" />
         <meta name="author" content="Lori Shannon" />
         <title>Data Viz | Final Project | Rob Gauer, Philip Hill, Lori Shannon</title>
         <!-- Font Awesome icons (free version)-->
@@ -43,7 +43,7 @@
  <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="index.html">Predicting Wine Quality</a>
+                <a class="navbar-brand js-scroll-trigger" href="index.html">Red Wine Quality</a>
 <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-danger text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <i class="fas fa-bars"></i></button>
 	<div class="collapse navbar-collapse" id="navbarResponsive" class="navbarcolor">
         <ul class="navbar-nav ml-auto">
@@ -57,16 +57,15 @@
         </li>       
 		<li class="nav-item dropdown"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Models</a>
          <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-            <a class="dropdown-item" href="log_reg_alcohol.html">Logistic Regression - Alcohol</a> 
-	    	<a class="dropdown-item" href="log_reg_ph.html">Logistic Regression - pH</a>
-            <a class="dropdown-item" href="log_reg_acidity.html">Logistic Regression - Volatile Acidity</a> 
-            <a class="dropdown-item" href="mlr_all.html">Multiple Linear Regression - All Attributes</a>
-            <a class="dropdown-item" href="mlr_combined.html">Multiple Linear Regression - Combined</a>
             <a class="dropdown-item" href="mlr_alcohol.html">Multiple Linear Regression - Alcohol</a> 
 	    	<a class="dropdown-item" href="mlr_ph.html">Multiple Linear Regression - pH</a>
             <a class="dropdown-item" href="mlr_acidity.html">Multiple Linear Regression - Volatile Acidity</a> 
-            <a class="dropdown-item" href="nn_accuracy.html">Neural Network - Accuracy</a>
-            <a class="dropdown-item" href="nn_loss.html">Neural Network - Loss</a>
+            <a class="dropdown-item" href="mlr_combined.html">Multiple Linear Regression - Combined</a>
+            <a class="dropdown-item" href="log_reg_alcohol.html">Logistic Regression - Alcohol</a> 
+	    	<a class="dropdown-item" href="log_reg_ph.html">Logistic Regression - pH</a>
+            <a class="dropdown-item" href="log_reg_acidity.html">Logistic Regression - Volatile Acidity</a> 
+            <a class="dropdown-item" href="neural_network.html">Neural Network</a>
+
           </div> 
         </li>        
         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="red_data.html">Data</a></li>
@@ -88,7 +87,7 @@
                 </div>
                 <!-- Masthead Subheading-->
 				<p class="masthead-subheading font-weight-light mb-0" align="center"><img src="assets/images/red-wine-bottles-wallpaper.jpg" alt="Wines" width="600" class="hp" style="padding-bottom: 30px;" /></p>
-				<p class="masthead-subheading font-weight-light mb-0" align="left">Wine is a (delicious) alcoholic drink that dates back to 5000 BC.<br /><br />The red-wine production process involves the extraction of color and flavor components from the grape skin. Red wine is made from dark-colored grape varieties.<br /><br />Winemakers are investing in new technologies to improve the quality of wines. By assessing the most influential factors through physicochemical tests, we can use the outcomes to determine the relationship of the factors to the quality rating of the final wine produced. <br /><br />After assembling the dataset, we used Python Pandas and Matplotlib to examine existing data on wine quality and then employed machine learning for regressions and predictions. Additionally, we include Tableau vizualizations based on the existing data to show the factors our machine learning models were based on.</p>
+				<p class="masthead-subheading font-weight-light mb-0" align="left">Wine is a (delicious) alcoholic drink that dates back to 5000 BC. The red wine production process involves the extraction of color and flavor components from the grape skin. Red wine is made from dark-colored grape varieties.<br /><br />Winemakers are investing in new technologies to improve the quality of wines. By assessing the most influential factors through physicochemical tests, we can use the outcomes to determine the relationship of the factors to the quality rating of the final wine produced. <br /><br />After assembling the dataset, we used Python Pandas and Matplotlib to examine existing data on wine quality and then employed machine learning for regressions and predictions. Additionally, we include Tableau visualizations based on the existing data to show the factors our machine learning models are based on.</p>
             </div>
         </header>
 
@@ -101,7 +100,41 @@
                     <div class="divider-custom-icon">              <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Machine Learning Models</h2></div>
                     <div class="divider-custom-line"></div>
                 </div>
-               				<div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1"><h4>Logistical Regression </h4> </div>
+                               
+                <div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1"><h4>Multiple Linear Regression </h4> </div>
+                <div class="row">
+	
+                    <!-- Portfolio Item 3 -->
+                    <div class="col-md-2 col-lg-2 mb-2">
+					<div class="portfolio-item-caption-content text-center text-black">Alcohol</div>
+						<div class="portfolio-item mx-auto" data-toggle="modal" data-target="mlr_alcohol.html">
+							<a href="mlr_alcohol.html"><img class="img-fluid" src="assets/images/MLR-Residual-Plot-of-Red-Wine-Quality-Factors-Alcohol.png" alt="Alcohol vs Quality" /></a>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4 -->
+                    <div class="col-md-2 col-lg-2 mb-2">
+					<div class="portfolio-item-caption-content text-center text-black">pH</div>
+						<div class="portfolio-item mx-auto" data-toggle="modal" data-target="mlr_ph.html">
+							<a href="mlr_ph.html"><img class="img-fluid" src="assets/images/MLR-Residual-Plot-of-Red-Wine-Quality-Factors-pH.png" alt="pH vs Quality" /></a>
+                        </div>
+                    </div>
+				    <!-- Portfolio Item 5 -->
+                    <div class="col-md-2 col-lg-2 mb-2">
+					<div class="portfolio-item-caption-content text-center text-black">Volatile Acidity</div>
+						<div class="portfolio-item mx-auto" data-toggle="modal" data-target="mlr_acidity.html">
+							<a href="mlr_acidity.html"><img class="img-fluid" src="assets/images/MLR-Residual-Plot-of-Red-Wine-Quality-Factors-VolatileAcidity-pH-Alcohol.png" alt="Acidity vs Quality" /></a>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2 -->
+                    <div class="col-md-2 col-lg-2 mb-2">
+                        <div class="portfolio-item-caption-content text-center text-black">Combined</div>
+                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="mlr_combined.html">
+                                <a href="mlr_combined.html"><img class="img-fluid" src="assets/images/MLR-Residual-Plot-of-Red-Wine-Quality-Factors-VolatileAcidity-pH-Alcohol.png" alt="Alcohol vs Quality" /></a>
+                            </div>
+                        </div>
+                </div>
+                
+                <div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1"><h4>Logistic Regression: Physicochemical Attributes </h4> </div>
                 <div class="row">
 					
                     <!-- Portfolio Item 1-->
@@ -126,63 +159,39 @@
                         </div>
                     </div>
                     </div>
-				
-				<div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1"><h4>Multiple Linear Regression </h4> </div>
-                <div class="row">
-					
-                    <!-- Portfolio Item 1 -->
-                    <div class="col-md-2 col-lg-2 mb-2">
-					<div class="portfolio-item-caption-content text-center text-black">All Wine Attributes</div>
-						<div class="portfolio-item mx-auto" data-toggle="modal" data-target="mlr_all.html">
-							<a href="mlr_all.html"><img class="img-fluid" src="assets/images/MLR-Residual-Plot-of-Red-Wine-Quality-Factors-All-Ingrediants.png" alt="Alcohol vs Quality" /></a>
-                        </div>
-                    </div>
-	
-                    <!-- Portfolio Item 2 -->
-                    <div class="col-md-2 col-lg-2 mb-2">
-					<div class="portfolio-item-caption-content text-center text-black">Attributes Combined</div>
-						<div class="portfolio-item mx-auto" data-toggle="modal" data-target="mlr_combined.html">
-							<a href="mlr_combined.html"><img class="img-fluid" src="assets/images/MLR-Residual-Plot-of-Red-Wine-Quality-Factors-VolatileAcidity-pH-Alcohol.png" alt="Alcohol vs Quality" /></a>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3 -->
-                    <div class="col-md-2 col-lg-2 mb-2">
-					<div class="portfolio-item-caption-content text-center text-black">Alcohol</div>
-						<div class="portfolio-item mx-auto" data-toggle="modal" data-target="mlr_alcohol.html">
-							<a href="mlr_alcohol.html"><img class="img-fluid" src="assets/images/MLR-Residual-Plot-of-Red-Wine-Quality-Factors-Alcohol.png" alt="Alcohol vs Quality" /></a>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4 -->
-                    <div class="col-md-2 col-lg-2 mb-2">
-					<div class="portfolio-item-caption-content text-center text-black">pH</div>
-						<div class="portfolio-item mx-auto" data-toggle="modal" data-target="mlr_ph.html">
-							<a href="mlr_ph.html"><img class="img-fluid" src="assets/images/MLR-Residual-Plot-of-Red-Wine-Quality-Factors-pH.png" alt="pH vs Quality" /></a>
-                        </div>
-                    </div>
-				    <!-- Portfolio Item 5 -->
-                    <div class="col-md-2 col-lg-2 mb-2">
-					<div class="portfolio-item-caption-content text-center text-black">Acidity</div>
-						<div class="portfolio-item mx-auto" data-toggle="modal" data-target="mlr_acidity.html">
-							<a href="mlr_acidity.html"><img class="img-fluid" src="assets/images/MLR-Residual-Plot-of-Red-Wine-Quality-Factors-VolatileAcidity-pH-Alcohol.png" alt="Acidity vs Quality" /></a>
-                        </div>
-                    </div>
-				</div>
                
 					<div class="mx-auto" data-toggle="modal" data-target="#portfolioModal1"><h4>Neural Network </h4> </div>
                 <div class="row">
 					
                     <!-- Portfolio Item 1-->
-                    <div class="col-md-12 col-lg-6 mb-6">
-					<div class="portfolio-item-caption-content text-center text-black">Training Model Accuracy Comparison </div>
+                    <div class="col-md-6 col-lg-6 mb-6">
+					<div class="portfolio-item-caption-content text-center text-black">Normal Training Model Accuracy Comparison </div>
 						<div class="portfolio-item mx-auto" data-toggle="modal" data-target="nn_accuracy.html">
-							<a href="nn_accuracy.html"><img class="img-fluid" src="assets/images/RedWineAccuracyComparison.png" alt="Training Model Accuracy Comparison" /></a>
+							<a href="neural_network.html"><img class="img-fluid" src="assets/images/NormalRedWineAccuracyComparison.png" alt="Normal Training Model Accuracy Comparison" /></a>
                         </div>
                     </div>
 					<!-- Portfolio Item 2-->
-                    <div class="col-md-12 col-lg-6 mb-6">
-					<div class="portfolio-item-caption-content text-center text-black">Training Model Loss Comparison</div>
+                    <div class="col-md-6 col-lg-6 mb-6">
+					<div class="portfolio-item-caption-content text-center text-black">Deep Training Model Accuracy Comparison</div>
+						<div class="portfolio-item mx-auto" data-toggle="modal" data-target="nn_accuracy.html">
+							<a href="neural_network.html"><img class="img-fluid" src="assets/images/DeepRedWineAccuracyComparison.png" alt="Deep Training Model Loss Comparison" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+					
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-6 mb-6">
+					<div class="portfolio-item-caption-content text-center text-black">Normal Training Model Loss Comparison </div>
 						<div class="portfolio-item mx-auto" data-toggle="modal" data-target="nn_loss.html">
-							<a href="nn_loss.html"><img class="img-fluid" src="assets/images/RedWineLossComparison.png" alt="Training Model Loss Comparison" /></a>
+							<a href="neural_network.html"><img class="img-fluid" src="assets/images/NormalRedWineLossComparison.png" alt="Normal Training Model Loss Comparison" /></a>
+                        </div>
+                    </div>
+					<!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-6 mb-6">
+					<div class="portfolio-item-caption-content text-center text-black">Deep Training Model Loss Comparison</div>
+						<div class="portfolio-item mx-auto" data-toggle="modal" data-target="nn_loss.html">
+							<a href="n"><img class="img-fluid" src="assets/images/DeepRedWineLossComparison.png" alt="Deep Training Model Loss Comparison" /></a>
                         </div>
                     </div>
 				</div>

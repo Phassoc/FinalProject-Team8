@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Max temperature plot analysis." />
+    <meta name="description" content="Machine Learning and Red Wine" />
     <meta name="author" content="Lori Shannon" />
     <title>Data Viz | Final Project | Rob Gauer, Philip Hill, Lori Shannon</title>
     <!-- Font Awesome icons (free version)-->
@@ -17,13 +17,36 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <script type="application/ld+json">
+		{ "@context" : "http://schema.org",
+		  "@type" : "Person",
+		  "name" : "Lori Shannon",
+		  "url" : "https://www.lorishannon.net",
+		  "logo" : "https://lorishannon.net/webvisualizations/assets/images/avataaars.png",
+			"telephone": "+1-866-555-5555",
+		  "sameAs" : [ 
+			"https://twitter.com/hockeylori",
+			"https://www.linkedin.com/in/loriashannon/",
+			"https://www.instagram.com/hockeylori"
+			],
+		 "description": "Lori is an action-driven leader responsible for strategic planning, implementation, and management of marketing campaigns focusing on brand awareness and lead generation through content management, organic and paid search, and social media marketing. Specialties: SEO & Content Marketing; Social Media Marketing & Advertising; E-mail Marketing ",
+		  "address": {
+			"@type": "PostalAddress",
+		"addressLocality": "Minneapolis",
+			"addressRegion": "MN",
+			"postalCode": "55410",
+			"streetAddress": "Minneapolis"
+			}
+		  }
+		</script>
+
 </head>
 
 <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="index.html">Predicting Wine Quality</a>
+            <a class="navbar-brand js-scroll-trigger" href="index.html">Red Wine Quality</a>
             <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-danger text-white rounded"
                 type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
                 aria-expanded="false" aria-label="Toggle navigation"> <i class="fas fa-bars"></i></button>
@@ -43,18 +66,17 @@
                             id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">Models</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                            <a class="dropdown-item" href="log_reg_alcohol.html">Logistic Regression - Alcohol</a>
-                            <a class="dropdown-item" href="log_reg_ph.html">Logistic Regression - pH</a>
-                            <a class="dropdown-item" href="log_reg_acidity.html">Logistic Regression - Volatile
-                                Acidity</a>
-                            <a class="dropdown-item" href="mlr_all.html">Multiple Linear Regression - All Attributes</a>
-                            <a class="dropdown-item" href="mlr_combined.html">Multiple Linear Regression - Combined</a>
                             <a class="dropdown-item" href="mlr_alcohol.html">Multiple Linear Regression - Alcohol</a>
                             <a class="dropdown-item" href="mlr_ph.html">Multiple Linear Regression - pH</a>
                             <a class="dropdown-item" href="mlr_acidity.html">Multiple Linear Regression - Volatile
                                 Acidity</a>
-                            <a class="dropdown-item" href="nn_accuracy.html">Neural Network - Accuracy</a>
-                            <a class="dropdown-item" href="nn_loss.html">Neural Network - Loss</a>
+                            <a class="dropdown-item" href="mlr_combined.html">Multiple Linear Regression - Combined</a>
+                            <a class="dropdown-item" href="log_reg_alcohol.html">Logistic Regression - Alcohol</a>
+                            <a class="dropdown-item" href="log_reg_ph.html">Logistic Regression - pH</a>
+                            <a class="dropdown-item" href="log_reg_acidity.html">Logistic Regression - Volatile
+                                Acidity</a>
+                            <a class="dropdown-item" href="neural_network.html">Neural Network</a>
+
                         </div>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
@@ -75,8 +97,8 @@
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
                 <div class="divider-custom-icon">
-                    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Multiple Linear Regression - Alcohol
-                        - Alcohol</h2>
+                    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Multiple Linear
+                        Regression - Alcohol</h2>
                 </div>
                 <div class="divider-custom-line"></div>
             </div>
@@ -84,7 +106,19 @@
                 <!-- Portfolio Item 1-->
                 <div class="col-md-12 col-lg-12 mb-12">
                     <div class="mx-auto">
-                        <p><img src="assets/images/MLR-Residual-Plot-of-Red-Wine-Quality-Factors-Alcohol.png" alt="pH"></p>
+                        <p><img src="assets/images/MLR-Residual-Plot-of-Red-Wine-Quality-Factors-Alcohol.png" alt="pH">
+                        </p>
+                        <p>Multiple linear regression simply means that you have more than one feature (independent)
+                            variable. The definition of Linear Regression: A regression line is simply calculating a
+                            line that best fits the data. This is typically done through the least squares method where
+                            the line is chosen to have the smallest overall distance to the points. (y=mx+b)</p>
+                        <p>Residuals (residual plot above)<br />
+                            Because we can't easily plot our line in 3D space, we can use a residual plot to check our
+                            predictions. Residuals are the difference between the true values of y and the predicted
+                            values of y. Source: <a
+                                href="https://www.qualtrics.com/support/stats-iq/analyses/regression-guides/interpreting-residual-plots-improve-regression/"
+                                target="_blank">Interpreting Residual Plots</a></p>
+
                         <p>Alcohol content affects aroma and taste in critical ways, and the sugar content of the grapes
                             determines alcohol content. Vintners test wine regularly and add water, sugar or fruit juice
                             to control alcohol level, taste and other characteristics. If you have any doubts about

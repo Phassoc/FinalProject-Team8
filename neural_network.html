@@ -43,8 +43,8 @@
 </head>
 
 <body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+     <!-- Navigation-->
+     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="index.html">Red Wine Quality</a>
 <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-danger text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <i class="fas fa-bars"></i></button>
@@ -76,6 +76,7 @@
 </div>
 </div>
     </nav>
+
     <!-- Portfolio Section-->
     <section class="page-section portfolio" id="portfolio">
         <div class="container">
@@ -87,39 +88,79 @@
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
                 <div class="divider-custom-icon">
-                    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Multiple Linear
-                        Regression
-                        - pH</h2>
+                    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Neural Network</h2>
                 </div>
                 <div class="divider-custom-line"></div>
             </div>
             <div class="row">
+                <p>A neural network is a series of algorithms that endeavors to recognize underlying relationships in a
+                    set of data through a process that mimics the way the human brain operates. Neural networks can
+                    adapt to changing input; so the network generates the best possible result without needing to
+                    redesign the output criteria.</p>
+
+                <p>Our neural network objective was to apply a normal neural network layer of 2 inputs, 6 hidden nodes
+                    and 2 outputs to our training data set and then determine whether applying additional deep learning
+                    layers (6 additional hidden nodes) to our data set would yield additional predictive insights
+                    (training accuracy and loss) relative to red wine quality and the 11 active ingredients
+                    (physicochemicals) that contribute to wine quality.</p>
+
+                <p>Loss is defined as the difference between the predicted value by your model and the true value. The
+                    most common loss function used in deep neural networks is cross-entropy. </p>
+
+                <p>Accuracy is one of the metrics to measure the performance of the model. More often than not the
+                    desired outcome is that accuracy increases with a decrease in loss.</p>
                 <!-- Portfolio Item 1-->
-                <div class="col-md-12 col-lg-12 mb-12">
-                    <div class="mx-auto">
-                        <p><img src="assets/images/MLR-Residual-Plot-of-Red-Wine-Quality-Factors-pH.png" alt="pH"></p>
-                        <p>Multiple linear regression simply means that you have more than one feature (independent)
-                            variable. The definition of Linear Regression: A regression line is simply calculating a
-                            line that best fits the data. This is typically done through the least squares method where
-                            the line is chosen to have the smallest overall distance to the points. (y=mx+b)</p>
-                        <p>Residuals (residual plot above)<br />
-                            Because we can't easily plot our line in 3D space, we can use a residual plot to check our
-                            predictions. Residuals are the difference between the true values of y and the predicted
-                            values of y. Source: <a
-                                href="https://www.qualtrics.com/support/stats-iq/analyses/regression-guides/interpreting-residual-plots-improve-regression/"
-                                target="_blank">Interpreting Residual Plots</a></p>
-
-                        <p>Winemakers use pH as a way to measure ripeness in relation to acidity. Low pH wines will
-                            taste tart and crisp, while higher pH wines are more susceptible to bacterial growth. Most
-                            wine pH's fall around 3 or 4; about 3.0 to 3.4 is desirable for white wines, while about 3.3
-                            to 3.6 is best for reds.</p>
-
+                <div class="col-md-6 col-lg-6 mb-6">
+                    <div class="portfolio-item-caption-content text-center text-black">Normal Training Model Accuracy
+                        Comparison </div>
+                    <div class="portfolio-item mx-auto" data-toggle="modal">
+                        <img class="img-fluid" src="assets/images/NormalRedWineAccuracyComparison.png"
+                            alt="Normal Training Model Accuracy Comparison" />
+                        <p>Normal Neural Network - Accuracy: 0.5650</p>
                     </div>
                 </div>
+                <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-6 mb-6">
+                    <div class="portfolio-item-caption-content text-center text-black">Deep Training Model Accuracy
+                        Comparison</div>
+                    <div class="portfolio-item mx-auto" data-toggle="modal">
+                        <img class="img-fluid" src="assets/images/DeepRedWineAccuracyComparison.png"
+                            alt="Deep Training Model Loss Comparison" />
+                        <p>Deep Neural Network - Accuracy: 0.6250</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Portfolio Item 1-->
+                <div class="col-md-6 col-lg-6 mb-6">
+                    <div class="portfolio-item-caption-content text-center text-black">Normal Training Model Loss
+                        Comparison </div>
+                    <div class="portfolio-item mx-auto" data-toggle="modal">
+                        <img class="img-fluid" src="assets/images/NormalRedWineLossComparison.png"
+                            alt="Normal Training Model Loss Comparison" />
+                        <p>Normal Neural Network - Loss: 1.2067</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-6 mb-6">
+                    <div class="portfolio-item-caption-content text-center text-black">Deep Training Model Loss
+                        Comparison</div>
+                    <div class="portfolio-item mx-auto" data-toggle="modal">
+                        <img class="img-fluid" src="assets/images/DeepRedWineLossComparison.png"
+                            alt="Deep Training Model Loss Comparison" />
+                        <p>Deep Neural Network - Loss: 0.9963</p>
+                    </div>
+                </div>
+                <p>Conclusion:
+                    We DID benefit modestly from applying a Deep Learning Neural Network to our training data set. As
+                    evidenced by the outcomes below, the deep learning model found patterns of less loss and more
+                    accuracy with the same levels of active ingredient input as was found in the normal neural network
+                    when trying to predict Red Wine quality. </p>
 
             </div>
-        </div>
     </section>
+
 
 
     <!-- Copyright Section-->

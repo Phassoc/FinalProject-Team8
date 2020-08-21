@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Welcome to my bootstrap website. Enjoy!" />
+        <meta name="description" content="Machine Learning and Red Wine" />
         <meta name="author" content="Lori Shannon" />
         <title>Data Viz | Final Project | Rob Gauer, Philip Hill, Lori Shannon</title>
         <!-- Font Awesome icons (free version)-->
@@ -40,42 +40,39 @@
 		
     </head>
     <body id="page-top">
- <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="index.html">Predicting Wine Quality</a>
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="index.html">Red Wine Quality</a>
 <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-danger text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <i class="fas fa-bars"></i></button>
-	<div class="collapse navbar-collapse" id="navbarResponsive" class="navbarcolor">
-        <ul class="navbar-nav ml-auto">
-		<li class="nav-item dropdown"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Visualizations</a>
-         <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-            <a class="dropdown-item" href="plot1.html">Alcohol</a> 
-			<a class="dropdown-item" href="plot2.html">pH Level</a>
-            <a class="dropdown-item" href="plot3.html">Volatile Acidity</a>
-			<a class="dropdown-item" href="plot4.html">Combined</a>
-          </div> 
-        </li>       
-		<li class="nav-item dropdown"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Models</a>
-         <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-            <a class="dropdown-item" href="log_reg_alcohol.html">Logistic Regression - Alcohol</a> 
-	    	<a class="dropdown-item" href="log_reg_ph.html">Logistic Regression - pH</a>
-            <a class="dropdown-item" href="log_reg_acidity.html">Logistic Regression - Volatile Acidity</a> 
-            <a class="dropdown-item" href="mlr_all.html">Multiple Linear Regression - All Attributes</a>
-            <a class="dropdown-item" href="mlr_combined.html">Multiple Linear Regression - Combined</a>
-            <a class="dropdown-item" href="mlr_alcohol.html">Multiple Linear Regression - Alcohol</a> 
-	    	<a class="dropdown-item" href="mlr_ph.html">Multiple Linear Regression - pH</a>
-            <a class="dropdown-item" href="mlr_acidity.html">Multiple Linear Regression - Volatile Acidity</a> 
-            <a class="dropdown-item" href="nn_accuracy.html">Neural Network - Accuracy</a>
-            <a class="dropdown-item" href="nn_loss.html">Neural Network - Loss</a>
-          </div> 
-        </li>        
-        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="red_data.html">Data</a></li>
-      </ul>
-    </div>
-  </div>
-        </nav>
-       
+<div class="collapse navbar-collapse" id="navbarResponsive" class="navbarcolor">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item dropdown"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Visualizations</a>
+ <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+    <a class="dropdown-item" href="plot1.html">Alcohol</a> 
+<a class="dropdown-item" href="plot2.html">pH Level</a>
+    <a class="dropdown-item" href="plot3.html">Volatile Acidity</a>
+<a class="dropdown-item" href="plot4.html">Combined</a>
+  </div> 
+</li>       
+<li class="nav-item dropdown"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Models</a>
+ <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+    <a class="dropdown-item" href="mlr_alcohol.html">Multiple Linear Regression - Alcohol</a> 
+<a class="dropdown-item" href="mlr_ph.html">Multiple Linear Regression - pH</a>
+    <a class="dropdown-item" href="mlr_acidity.html">Multiple Linear Regression - Volatile Acidity</a> 
+    <a class="dropdown-item" href="mlr_combined.html">Multiple Linear Regression - Combined</a>
+    <a class="dropdown-item" href="log_reg_alcohol.html">Logistic Regression - Alcohol</a> 
+<a class="dropdown-item" href="log_reg_ph.html">Logistic Regression - pH</a>
+    <a class="dropdown-item" href="log_reg_acidity.html">Logistic Regression - Volatile Acidity</a> 
+    <a class="dropdown-item" href="neural_network.html">Neural Network</a>
 
+  </div> 
+</li>        
+<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="red_data.html">Data</a></li>
+</ul>
+</div>
+</div>
+</nav>
   <!-- Portfolio Section-->
   <section class="page-section portfolio" id="portfolio">
     <div class="container">
@@ -95,7 +92,11 @@
         <!-- Portfolio Item 1-->
         <div class="col-md-12 col-lg-12 mb-12">
           <div class="mx-auto">
-            <p>The following table includes all of the data of red wine used for plotting during this project. </p>
+            <p><p>This dataset was created by: Paulo Cortez (Univ. Minho), Antonio Cerdeira, Fernando Almeida, Telmo Matos and Jose Reis (CVRVV) @ 2009 and was downloaded from <a href="https://archive.ics.uci.edu/ml/datasets/Wine+Quality" target="_blank">https://archive.ics.uci.edu/ml/datasets/Wine+Quality.</a> </p>
+            <p>The dataset was created using wine samples related to red variants of the Portuguese "Vinho Verde" wine.  The inputs include objective tests (e.g. pH values) and the output is based on sensory data (median of at least 3 evaluations made by wine experts). Each expert graded the wine quality between 0 (very bad) and 10 (very excellent). </p>
+           <p>The number of instances in the dataset is 1599. The number of attributes is 11 plus an output variable (quality). Because several of the attributes may be correlated, it makes sense to apply some sort of feature selection (we choose alcohol content, pH levels, and volatile acidity).</p>
+           <p>Attribute information (based on physicochemical tests) is below. The final column contains the output variable quality (scored between 0 and 10).</p>
+            </p>
           </div>
           <div class="mx-auto">
             <table border="0" class="table table-bordered table-hover" cellpadding="5px">
