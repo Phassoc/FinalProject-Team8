@@ -68,7 +68,7 @@ Our team used the following components of Machine Learning to predict and classi
 
 #
 ## Functional Work Flow 
-  1. Dataset CSV file is reviewed and prepared, /datasets/winequality-red.csv 
+  1. Dataset CSV file is reviewed and prepared: ../assets/winequality-red.csv 
   2. Python Jupyter Notebook and Matplotlib plot files for each machine learning technology used.
   3. Tableau used for visualization. Functional review of dataset for quick review of described visualizations.
   4. Published via GitHub IO for presentation of our data visualization of ML components to tell the story.
