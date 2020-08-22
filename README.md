@@ -76,7 +76,10 @@ The following Machine Learning methods were used to predict and classify the phy
       
       * Our neural network objective was to apply a normal neural network layer of 2 inputs, 6 hidden nodes and 2 outputs to our training data set and then determine whether applying additional deep learning layers (6 additional hidden nodes) to our data set would yield additional predictive insights (training accuracy and loss) relative to red wine quality and the 11 active ingredients (physicochemicals) that contribute to wine quality.
 
-      * Conclusion: We DID benefit modestly from applying a Deep Learning Neural Network to our training data set. As evidenced by the outcomes below, the deep learning model found patterns of less loss and more accuracy with the same levels of active ingredient input as was found in the normal neural network when trying to predict Red Wine quality.
+      * Conclusion: Training a neural network with a small dataset (as we did) can cause the network to memorize all training examples, in turn leading to overfitting and poor performance on new (or holdout) datasets.
+
+        Small datasets like ours may also represent a harder mapping problem for neural networks to learn, given the patchy or sparse sampling of points being processed in the high-dimensional input space of normal and deep learning neural network models.
+        That being said, we did benefit modestly from applying a Deep Learning Neural Network to our training data set. As evidenced by the outcomes below, the deep learning model found patterns of less loss and more accuracy with the same levels of active ingredient (Physicochemical) input as was found in the normal neural network when trying to predict and/or classify Red Wine quality. 
 
 
    * Tableau.
