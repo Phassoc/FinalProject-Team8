@@ -57,7 +57,7 @@ The following Machine Learning methods were used to predict and classify the phy
       * Logistic Regression is a statistical method for predicting binary outcomes from data.
         * Examples of this are "yes" vs "no" or "young" vs "old".
           These are categories that translate to probability of being a 0 or a 1.
-      * Conclusion: The classification algorithm used to predict a that the factors (features) used have the greatest signifigance to the set of 'quality' classes equal to 6.
+      * Conclusion: The classification algorithm used to predict the factors (features) used and have the greatest signifigance to the set of 'quality' classes defined is equal to a quality value of 6.
       
            	Alcohol has a higher function on the category of quality = 6.
             Training Data Score: 0.6005004170141784
@@ -132,7 +132,7 @@ The following Machine Learning methods were used to predict and classify the phy
 ### Data Analytics & Visualization 
  Lori Shannon, Philip Hill, Rob Gauer.
  
-### Copyright August 2020
+##### Copyright @ August 2020
 #
 ![wine-quality.jfif](images-README/wine-quality.jfif)
 #
